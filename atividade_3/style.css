@@ -1,0 +1,162 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #2563eb;
+}
+
+main {
+    margin-top: 100px;
+    /* Espaço para o header fixo */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+article {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+article span {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+aside p {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    header nav a {
+        margin: 5px 0;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+        padding-left: 0;
+    }
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    article h2 {
+        font-size: 22px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
