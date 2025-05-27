@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+
+<style>
+    img {
+        height: 100px;
+    }
+</style>
+
+<body>
+
+    <img id="pokemonImg"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+        alt="Pokemon">
+
+    <div class="btn-container">
+        <button onclick="voltar()">Voltar</button>
+        <button onclick="adiantar()">Adiantar</button>
+    </div>
+
+    <script>
+        var index = 1;
+        const img = document.getElementById('pokemonImg');
+
+        function voltar() {
+            index -= 1
+            img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${circularNumber(index)}.svg`
+        }
+
+        function adiantar() {
+            index += 1
+            img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${circularNumber(index)}.svg`
+        }
+
+        function circularNumber(num) {
+            return ((num - 1 + 100) % 100) + 1;
+        }
+    </script>
+</body>
+
+</html>

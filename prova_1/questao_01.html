@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+
+<style>
+    body,
+    html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex: 0.3;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+        background-color: gray;
+        padding: 30px;
+    }
+
+    nav>a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .content {
+        flex: 0.7;
+        padding: 30px;
+        border-top: 1px solid gray;
+    }
+    
+    article>h2 {
+        margin-top: 0;
+    }
+
+    .img {
+        background-color: antiquewhite;
+        border-radius: 5px;
+        width: 200px;
+        height: 200px;
+    }
+
+    footer {
+        padding: 30px;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @media (max-width: 400px) {
+        main{
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>Desenvolvimento de Software WEB</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="#html">Introdução ao Html</a>
+            <a href="#css">Introdução ao Css</a>
+            <a href="#js">Introdução ao JavaScript</a>
+        </nav>
+        <div class="content">
+            <article id="html">
+                <h2>Introdução ao Html</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur velit iusto quasi id, labore
+                    magnam
+                    doloribus perferendis nulla eius sunt illum qui aspernatur recusandae fugit aliquid deserunt!
+                    Excepturi,
+                    animi voluptatum?</p>
+                <div class="img"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam sed vitae molestias voluptates
+                    quasi
+                    sint amet, debitis architecto? Libero odio pariatur facere officiis dolor, possimus adipisci
+                    laboriosam
+                    esse fugiat?</p>
+                <div class="img"></div>
+            </article>
+            <article id="css">
+                <h2>Introdução ao Css</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur velit iusto quasi id, labore
+                    magnam
+                    doloribus perferendis nulla eius sunt illum qui aspernatur recusandae fugit aliquid deserunt!
+                    Excepturi,
+                    animi voluptatum?</p>
+                <div class="img"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam sed vitae molestias voluptates
+                    quasi
+                    sint amet, debitis architecto? Libero odio pariatur facere officiis dolor, possimus adipisci
+                    laboriosam
+                    esse fugiat?</p>
+                <div class="img"></div>
+            </article>
+            <article id="js">
+                <h2>Introdução ao JavaScript</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur velit iusto quasi id, labore
+                    magnam
+                    doloribus perferendis nulla eius sunt illum qui aspernatur recusandae fugit aliquid deserunt!
+                    Excepturi,
+                    animi voluptatum?</p>
+                <div class="img"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam sed vitae molestias voluptates
+                    quasi
+                    sint amet, debitis architecto? Libero odio pariatur facere officiis dolor, possimus adipisci
+                    laboriosam
+                    esse fugiat?</p>
+                <div class="img"></div>
+            </article>
+        </div>
+
+    </main>
+    <footer>
+        <a href="mailto:cristianomendes@alu.ufc.br">cristianomendes@alu.ufc.br</a>
+        <p>&copy; 2025 Todos os direito reservados</p>
+    </footer>
+</body>
+
+</html>
